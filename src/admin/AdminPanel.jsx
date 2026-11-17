@@ -1152,12 +1152,22 @@ export default function AdminPanel({ onExitAdmin }) {
                   <span className="adm-help">Auto WhatsApp link: wa.me/{draftConfig.whatsappNumber || ''}</span>
                 </div>
 
-                <div className="adm-field adm-field-full">
+                <div className="adm-field">
                   <label className="adm-label">4.4 Email Address</label>
                   <input
                     className="adm-input"
                     value={draftConfig.email || ''}
                     onChange={(e) => updateConfigField('email', e.target.value)}
+                  />
+                </div>
+
+                <div className="adm-field">
+                  <label className="adm-label">4.4b Secondary Email Address (Optional)</label>
+                  <input
+                    className="adm-input"
+                    placeholder="e.g. khansherllc@gmail.com"
+                    value={draftConfig.emailSecondary || ''}
+                    onChange={(e) => updateConfigField('emailSecondary', e.target.value)}
                   />
                 </div>
 
