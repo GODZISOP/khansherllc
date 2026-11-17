@@ -276,7 +276,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f7f9] text-[#1e293b]">
+    <div className="min-h-screen bg-[#f7f3ed] text-[#1e1916]">
       {/* 2-TIER MODERN STICKY HEADER */}
       <header className="site-header">
         {/* UPPER TIER: MAIN NAVIGATION */}
@@ -649,8 +649,19 @@ export default function App() {
 
           {/* SECTION 1: SHOP EVERYDAY ESSENTIALS */}
           <section id="categories-section" className="section-wrapper essentials-section">
-            <div className="section-header-left">
+            <div className="editorial-section-head">
               <h2 className="section-heading-clean">Shop Everyday Essentials</h2>
+              <button
+                type="button"
+                className="editorial-shop-all-link"
+                onClick={() => {
+                  setSelectedCategory('all');
+                  navigateTo('shop');
+                }}
+              >
+                <span>Shop All</span>
+                <ArrowRight size={14} />
+              </button>
             </div>
 
             <div className="categories-grid-four">

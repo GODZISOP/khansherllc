@@ -1,20 +1,20 @@
 :root {
-  --primary-navy: #0b0f19;
-  --secondary-teal: #161e2e;
-  --accent-teal: #c89b3c;
-  --accent-teal-hover: #a67c22;
-  --accent-brown: #c89b3c;
-  --accent-brown-hover: #a67c22;
-  --accent-gold: #e2b95b;
-  --accent-gold-light: #fef3c7;
-  --bg-light: #f8fafc;
-  --bg-card: #ffffff;
-  --text-dark: #0f172a;
-  --text-muted: #64748b;
-  --border-subtle: #e2e8f0;
+  --primary-navy: #1e1916;
+  --secondary-teal: #2e2621;
+  --accent-teal: #1e1916;
+  --accent-teal-hover: #38302b;
+  --accent-brown: #1e1916;
+  --accent-brown-hover: #38302b;
+  --accent-gold: #8c7a66;
+  --accent-gold-light: #efe9e0;
+  --bg-light: #f7f3ed;
+  --bg-card: #faf7f2;
+  --text-dark: #1e1916;
+  --text-muted: #6c635a;
+  --border-subtle: #e4ddd3;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --card-radius: 18px;
+  --card-radius: 2px;
 }
 
 * {
@@ -4371,4 +4371,652 @@ img {
 @media (prefers-reduced-motion: reduce) {
   .hero-orb, .hero-title-highlight, .hero-sparkle-icon, .ticker-track, .section-wrapper { animation: none !important; }
   .hero-eyebrow-badge, .hero-title, .hero-description, .hero-actions { opacity: 1; animation: none; }
+}
+
+
+/* ==========================================================================
+   ARCHITECTURAL EDITORIAL E-COMMERCE UI LAYER (WARM ALABASTER / FORME STYLE)
+   ========================================================================== */
+
+body {
+  background-color: #f7f3ed !important;
+  color: #1e1916 !important;
+}
+
+.section-wrapper {
+  animation: none !important;
+}
+
+/* Header & Navigation */
+.site-header {
+  box-shadow: none !important;
+  border-bottom: 1px solid #e4ddd3;
+}
+
+.main-nav {
+  background: rgba(247, 243, 237, 0.96) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e4ddd3 !important;
+  padding: 16px 40px !important;
+}
+
+.brand-title {
+  font-family: var(--font-sans) !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  color: #1e1916 !important;
+}
+
+.brand-subtitle {
+  font-size: 0.68rem !important;
+  letter-spacing: 0.1em !important;
+  color: #6c635a !important;
+}
+
+.nav-link {
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  color: #4a423b !important;
+  padding: 6px 2px !important;
+  border-radius: 0 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #1e1916 !important;
+  background: transparent !important;
+  box-shadow: inset 0 -1.5px 0 #1e1916;
+}
+
+.btn-nav-cart {
+  background: transparent !important;
+  color: #1e1916 !important;
+  border: 1px solid #d7cfc4 !important;
+  border-radius: 2px !important;
+  padding: 8px 14px !important;
+  font-size: 0.76rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+}
+
+.btn-nav-cart:hover {
+  background: #efe9e0 !important;
+  border-color: #1e1916 !important;
+}
+
+.nav-cart-badge {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+}
+
+.btn-nav-partner {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border: 1px solid #1e1916 !important;
+  border-radius: 2px !important;
+  padding: 9px 18px !important;
+  font-size: 0.74rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase;
+}
+
+.btn-nav-partner:hover {
+  background: #38302b !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Sub-bar: Warm Stone Architectural Strip */
+.products-blue-bar {
+  background: #efe9e0 !important;
+  border-bottom: 1px solid #e0d7ca !important;
+  padding: 8px 40px !important;
+}
+
+.blue-cat-btn {
+  color: #4a423b !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 2px !important;
+  font-size: 0.73rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+  padding: 6px 12px !important;
+}
+
+.blue-cat-btn:hover,
+.blue-cat-btn.active {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border-color: #1e1916 !important;
+}
+
+.blue-count-pill {
+  background: rgba(30, 25, 22, 0.12) !important;
+  color: inherit !important;
+}
+
+.blue-perk-item,
+.blue-perk-phone,
+.blue-perk-divider {
+  color: #5b524a !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.05em;
+}
+
+/* Panel 1: Editorial Architectural Hero */
+.hero-section {
+  min-height: 580px !important;
+  background-color: #2b231d !important;
+  background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=80') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 19, 15, 0.72) 0%,
+    rgba(24, 19, 15, 0.45) 52%,
+    rgba(24, 19, 15, 0.25) 100%
+  ) !important;
+  backdrop-filter: none !important;
+}
+
+.hero-orb {
+  display: none !important;
+}
+
+.hero-eyebrow-badge {
+  background: rgba(247, 243, 237, 0.14) !important;
+  border: 1px solid rgba(247, 243, 237, 0.35) !important;
+  color: #f7f3ed !important;
+  border-radius: 2px !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.18em !important;
+  padding: 6px 14px !important;
+}
+
+.hero-title {
+  font-family: var(--font-serif) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  color: #faf7f2 !important;
+  text-shadow: none !important;
+}
+
+.hero-title-highlight {
+  background: none !important;
+  -webkit-text-fill-color: #efe9e0 !important;
+  color: #efe9e0 !important;
+  font-style: italic;
+  animation: none !important;
+}
+
+.hero-description {
+  color: #e8e1d7 !important;
+  font-weight: 400 !important;
+}
+
+.btn-hero-primary {
+  background: #faf7f2 !important;
+  color: #1e1916 !important;
+  border: 1px solid #faf7f2 !important;
+  border-radius: 2px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  padding: 14px 28px !important;
+  box-shadow: none !important;
+}
+
+.btn-hero-primary:hover {
+  background: #e6dfd5 !important;
+  border-color: #e6dfd5 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-hero-outline {
+  background: transparent !important;
+  color: #faf7f2 !important;
+  border: 1px solid rgba(250, 247, 242, 0.65) !important;
+  border-radius: 2px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  padding: 14px 28px !important;
+}
+
+.btn-hero-outline:hover {
+  background: rgba(250, 247, 242, 0.14) !important;
+  border-color: #faf7f2 !important;
+  transform: none !important;
+}
+
+/* Trust Ribbon & Subtle Ticker */
+.hero-trust-ribbon {
+  background: #faf7f2 !important;
+  border-bottom: 1px solid #e4ddd3 !important;
+}
+
+.trust-ribbon-icon {
+  background: #efe9e0 !important;
+  color: #1e1916 !important;
+  border-radius: 2px !important;
+}
+
+.trust-ribbon-title {
+  color: #1e1916 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.02em;
+}
+
+.trust-ribbon-desc {
+  color: #6c635a !important;
+}
+
+.ticker-strip {
+  background: #1e1916 !important;
+  border-block: 1px solid #2f2823 !important;
+}
+
+.ticker-item {
+  color: #e6dfd5 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em !important;
+  font-size: 0.72rem !important;
+}
+
+.ticker-item svg {
+  color: #c7b8a3 !important;
+}
+
+/* Panel 2: Asymmetric Editorial Category Grid ("THE ART OF FORM" layout) */
+.essentials-section {
+  padding-top: 64px !important;
+  padding-bottom: 48px !important;
+}
+
+.section-heading-clean,
+.section-title {
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase;
+  color: #1e1916 !important;
+}
+
+.editorial-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #e4ddd3;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+}
+
+.editorial-shop-all-link {
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e1916;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  transition: opacity 0.2s;
+}
+
+.editorial-shop-all-link:hover {
+  opacity: 0.65;
+}
+
+.categories-grid-four {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+@media (min-width: 1024px) {
+  .categories-grid-four {
+    grid-template-columns: 0.9fr 1.5fr 1fr 0.9fr !important;
+    align-items: end !important;
+  }
+  .categories-grid-four .category-card-clean:nth-child(2) .category-img-container {
+    height: 410px !important;
+  }
+  .categories-grid-four .category-card-clean:nth-child(1) .category-img-container {
+    height: 230px !important;
+  }
+  .categories-grid-four .category-card-clean:nth-child(3) .category-img-container {
+    height: 300px !important;
+  }
+  .categories-grid-four .category-card-clean:nth-child(4) .category-img-container {
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .categories-grid-four {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-grid-four {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.category-card-clean {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.category-card-clean:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.category-img-container {
+  background: #efe9e0 !important;
+  border-radius: 2px !important;
+  overflow: hidden !important;
+  border: 1px solid #e4ddd3;
+}
+
+.category-img-clean {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.category-card-clean:hover .category-img-clean {
+  transform: scale(1.04) !important;
+}
+
+.category-count-badge {
+  display: none !important;
+}
+
+.category-meta-clean {
+  padding: 14px 0 4px !important;
+  background: transparent !important;
+}
+
+.category-name-clean {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+  color: #1e1916 !important;
+}
+
+.category-desc-preview {
+  color: #6c635a !important;
+  font-size: 0.82rem !important;
+  margin-top: 4px !important;
+}
+
+.category-link-clean {
+  color: #1e1916 !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase;
+  margin-top: 8px !important;
+}
+
+/* Product Cards (Home & Shop) */
+.featured-section {
+  background: #f7f3ed !important;
+  padding-top: 48px !important;
+}
+
+.clean-product-card,
+.product-card {
+  background: #faf7f2 !important;
+  border: 1px solid #e4ddd3 !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.clean-product-card:hover,
+.product-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: #c7bdb0 !important;
+  box-shadow: 0 12px 28px rgba(30, 25, 22, 0.06) !important;
+}
+
+.clean-product-img-wrap,
+.product-img-wrap {
+  background: #efe9e0 !important;
+  border-bottom: 1px solid #e4ddd3;
+}
+
+.card-badge-stock,
+.card-badge-sku,
+.product-badge {
+  background: rgba(250, 247, 242, 0.92) !important;
+  color: #1e1916 !important;
+  border: 1px solid #d7cfc4;
+  border-radius: 2px !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-category-pill {
+  color: #6c635a !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.clean-product-title,
+.product-title {
+  color: #1e1916 !important;
+  font-weight: 600 !important;
+}
+
+.clean-product-price,
+.product-price-val {
+  color: #1e1916 !important;
+  font-weight: 600 !important;
+}
+
+.btn-clean-add-cart,
+.btn-add-cart {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border: 1px solid #1e1916 !important;
+  border-radius: 2px !important;
+  font-size: 0.74rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+}
+
+.btn-clean-add-cart:hover,
+.btn-add-cart:hover {
+  background: #38302b !important;
+  border-color: #38302b !important;
+}
+
+.btn-view-details {
+  background: transparent !important;
+  color: #1e1916 !important;
+  border: 1px solid #d7cfc4 !important;
+  border-radius: 2px !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+}
+
+.btn-view-details:hover {
+  background: #efe9e0 !important;
+  border-color: #1e1916 !important;
+}
+
+.btn-shop-all-pill {
+  background: transparent !important;
+  color: #1e1916 !important;
+  border: 1px solid #1e1916 !important;
+  border-radius: 2px !important;
+  font-size: 0.76rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase;
+  padding: 13px 34px !important;
+}
+
+.btn-shop-all-pill:hover {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+}
+
+/* Panel 3: Product Detail Editorial Styling */
+.product-detail-page {
+  background: #f7f3ed !important;
+}
+
+.product-gallery-card,
+.detail-price-panel,
+.wholesale-tiers-box,
+.detail-purchase-panel,
+.detail-tabs-section,
+.detail-tab-content {
+  background: #faf7f2 !important;
+  border-color: #e4ddd3 !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.main-gallery-view {
+  background: #efe9e0 !important;
+  border-radius: 2px !important;
+}
+
+.thumb-btn {
+  border-radius: 2px !important;
+  border: 1px solid #e4ddd3 !important;
+  background: #efe9e0 !important;
+}
+
+.thumb-btn.active {
+  border-color: #1e1916 !important;
+}
+
+.detail-product-title {
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03em !important;
+  text-transform: uppercase;
+  color: #1e1916 !important;
+}
+
+.price-tag-large {
+  color: #1e1916 !important;
+  font-weight: 600 !important;
+}
+
+.btn-detail-add-cart {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border-radius: 2px !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+}
+
+.btn-detail-add-cart:hover {
+  background: #38302b !important;
+}
+
+.btn-detail-whatsapp,
+.btn-detail-rfq {
+  border-radius: 2px !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+}
+
+.detail-tab-btn {
+  border-radius: 0 !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+}
+
+.detail-tab-btn.active {
+  color: #1e1916 !important;
+  border-bottom-color: #1e1916 !important;
+  background: transparent !important;
+}
+
+/* Bento, Testimonials & VIP Banner */
+.hf-experience-section {
+  background: #efe9e0 !important;
+  border-top: 1px solid #e0d7ca;
+  border-bottom: 1px solid #e0d7ca;
+}
+
+.hf-bento-card,
+.hf-testimonial-card {
+  background: #faf7f2 !important;
+  border: 1px solid #e0d7ca !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+.hf-bento-icon-box {
+  background: #efe9e0 !important;
+  border-radius: 2px !important;
+}
+
+.hf-eyebrow-badge,
+.hf-gold-pill {
+  background: #e4ddd3 !important;
+  color: #1e1916 !important;
+  border-radius: 2px !important;
+  letter-spacing: 0.14em !important;
+}
+
+.hf-vip-banner {
+  background: #1e1916 !important;
+  border-radius: 2px !important;
+}
+
+.hf-btn-whatsapp-pill {
+  background: #1e1916 !important;
+  color: #faf7f2 !important;
+  border-radius: 2px !important;
+}
+
+/* Contact & Footer */
+.site-footer {
+  background: #1e1916 !important;
+  color: #e6dfd5 !important;
+  border-top: 1px solid #2f2823 !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(230, 223, 213, 0.14) !important;
 }
