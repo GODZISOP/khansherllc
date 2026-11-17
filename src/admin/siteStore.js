@@ -121,9 +121,9 @@ const baseSiteConfig = {
     "accentGold": "#10b981",
     "bgLight": "#f8fafc"
   },
-  "ownerFirstName": "Khan",
-  "ownerLastName": "Sher",
-  "ownerFullName": "Khan Sher",
+  "ownerFirstName": "Maaz",
+  "ownerLastName": "Khan",
+  "ownerFullName": "Maaz Khan",
   "emailSecondary": "khansherllc@gmail.com"
 };
 
