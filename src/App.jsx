@@ -708,7 +708,7 @@ export default function App() {
                     <div className="card-rating-row">
                       <div className="card-stars">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} size={13} fill="#10b981" color="#10b981" />
+                          <Star key={i} size={13} fill="#c89b3c" color="#c89b3c" />
                         ))}
                       </div>
                       <span className="card-rating-num">{prod.rating.toFixed(1)}</span>
@@ -1074,7 +1074,7 @@ export default function App() {
                 Home
               </button>
               <span>/</span>
-              <span style={{ color: '#04201a', fontWeight: '600' }}>Shop All Products</span>
+              <span style={{ color: '#0b0f19', fontWeight: '600' }}>Shop All Products</span>
             </div>
             
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '16px' }}>
@@ -1213,7 +1213,7 @@ export default function App() {
                     <div className="card-rating-row">
                       <div className="card-stars">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} size={13} fill="#10b981" color="#10b981" />
+                          <Star key={i} size={13} fill="#c89b3c" color="#c89b3c" />
                         ))}
                       </div>
                       <span className="card-rating-num">{prod.rating.toFixed(1)}</span>

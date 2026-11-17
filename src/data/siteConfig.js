@@ -146,14 +146,14 @@ export const siteConfig = {
   logo: defaultLogo,
 
   // ─────────────────────────────────────────────
-  // 🎨 COLOR THEME (Luxury Gold & Deep Royal Navy)
+  // 🎨 COLOR THEME (Midnight Obsidian & Imperial Gold)
   // ─────────────────────────────────────────────
   theme: {
-    primaryNavy:   "#04201a",
-    secondaryTeal: "#0b3a2e",
-    accentTeal:    "#059669",
-    accentHover:   "#047857",
-    accentGold:    "#10b981",
-    bgLight:       "#f8fafc"
+    primaryNavy:   "#0b0f19",
+    secondaryTeal: "#161e2e",
+    accentTeal:    "#c89b3c",
+    accentHover:   "#a67c22",
+    accentGold:    "#e2b95b",
+    bgLight:       "#f9fafb"
   }
 };
