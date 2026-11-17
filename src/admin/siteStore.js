@@ -664,6 +664,18 @@ export async function fetchAllWebsites() {
     }
 
     const mapped = data.map(mapSupabaseRowToWebsite);
+    const hasDefaultSite = mapped.some((w) => w.slug === DEFAULT_SITE_SLUG);
+    if (!hasDefaultSite) {
+      const seedDefault =
+        local.find((w) => w.slug === DEFAULT_SITE_SLUG) ||
+        getInitialSeedWebsites().find((w) => w.slug === DEFAULT_SITE_SLUG);
+      if (seedDefault) {
+        mapped.unshift({
+          ...seedDefault,
+          config: mergeWithDefaultConfig(seedDefault.config),
+        });
+      }
+    }
     writeLocalWebsites(mapped);
     return mapped;
   } catch (e) {
