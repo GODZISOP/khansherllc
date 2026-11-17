@@ -5,7 +5,7 @@ export const categories = [
     description: 'Ceramic ultrasonic aroma systems, architectural task illumination, and curated residential decor.',
     buttonText: 'Shop Home & Living',
     link: '#',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=520&q=75',
     itemCount: 2
   },
   {
@@ -14,7 +14,7 @@ export const categories = [
     description: 'Dermatologist-grade peptide skincare, luxury botanical elixirs, and signature royal oud perfumes.',
     buttonText: 'Shop Personal Care',
     link: '#',
-    image: 'https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=520&q=75',
     itemCount: 2
   },
   {
@@ -23,7 +23,7 @@ export const categories = [
     description: 'High-fidelity spatial audio headsets, 100W GaN fast desktop charging stations, and modern consumer tech.',
     buttonText: 'Shop Electronics',
     link: '#',
-    image: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=520&q=75',
     itemCount: 2
   },
   {
@@ -32,7 +32,7 @@ export const categories = [
     description: 'Single-estate cold extracted olive reserves, Grade A+ wild mountain Sidr honey, and artisanal provisions.',
     buttonText: 'Shop Gourmet',
     link: '#',
-    image: 'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=520&q=75',
     itemCount: 2
   }
 ];
@@ -53,7 +53,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 96,
     priceNote: 'Direct Factory & Bulk Wholesale Tier Available',
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Whisper-quiet matte ceramic ultrasonic aroma diffuser with warm ambient LED ring, dual continuous/intermittent mist modes, and safety auto-off.',
     longDescription: 'Curated and distributed globally by KHAN SHER LLC for boutique lifestyle retailers and executive residential suites. Hand-finished matte ceramic stoneware casing with ultra-fine cold-vapor atomization to preserve pure essential oil therapeutic properties across rooms up to 500 sq. ft.',
@@ -92,7 +92,7 @@ export const products = [
     rating: 4.9,
     reviewCount: 78,
     priceNote: 'Volume Tier Pricing',
-    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Brushed brass finish task lamp with full-spectrum eye-care illumination, 5 warmth presets, and integrated 15W Qi fast wireless charging.',
     longDescription: 'Supplied directly by KHAN SHER LLC for modern corporate workstations and executive suites. Built with a weighted anti-tip base, smooth touch-slide dimming, memory function, zero blue-light hazard certification, and dual-axis folding hinges.',
@@ -130,7 +130,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 114,
     priceNote: 'Boutique & Perfumery Wholesale Available',
-    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Regal oriental fragrance with top notes of saffron and Calabrian bergamot, heart of aged Cambodian agarwood, and a velvety ambergris base.',
     longDescription: 'Handcrafted and batch-matured under the highest artisanal fragrance standards for KHAN SHER LLC. A long-lasting 28% Extrait concentration designed for high-end boutique perfumeries and discerning retailers worldwide, presented in an embossed luxury gift box.',
@@ -168,7 +168,7 @@ export const products = [
     rating: 4.9,
     reviewCount: 98,
     priceNote: 'Dermatologist Tested & Approved',
-    image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Clinical dermatological formulation combining 5 bio-identical peptides, squalane, and triple molecular hyaluronic acid for intensive barrier repair.',
     longDescription: 'Formulated for clinical skincare distributors and beauty retailers under KHAN SHER LLC standards. Dermatologist-tested, non-comedogenic, and 100% cruelty-free formulation packaged in amber dropper bottles to preserve active ingredient stability.',
@@ -206,7 +206,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 135,
     priceNote: 'Wholesale Electronics Tier Available',
-    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Studio-grade acoustic clarity with hybrid active noise cancellation, custom 40mm titanium drivers, and 45-hour continuous playback.',
     longDescription: 'Curated and distributed globally by KHAN SHER LLC. Built with dual transparency mode, spatial audio head tracking, Bluetooth 5.3 multi-point streaming, and memory-foam ear cushions wrapped in breathable protein leather for acoustic luxury.',
@@ -244,7 +244,7 @@ export const products = [
     rating: 4.9,
     reviewCount: 88,
     priceNote: 'High Velocity Retail Ready',
-    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'High-speed Gallium Nitride (GaN III) power hub capable of charging laptops, tablets, and phones simultaneously with smart dynamic power routing.',
     longDescription: 'Sourced by KHAN SHER LLC for tech distributors and corporate bulk orders. 50% smaller than standard chargers, featuring multi-point thermal safeguards, foldaway prongs, and international travel voltage compatibility (100-240V).',
@@ -282,7 +282,7 @@ export const products = [
     rating: 5.0,
     reviewCount: 156,
     priceNote: 'Export Grade Certified 100% Raw & Halal',
-    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Unfiltered monofloral raw mountain Sidr honey harvested from pristine wild highlands, rich in active natural enzymes and rich caramel notes.',
     longDescription: 'Procured direct from certified highland apiaries by KHAN SHER LLC. Laboratory-verified 100% pure raw honey packaged in gold-foil embossed hexagonal glass jars with an included handcrafted wooden honey dipper.',
@@ -320,7 +320,7 @@ export const products = [
     rating: 4.9,
     reviewCount: 108,
     priceNote: 'Restaurant & Wholesale Bulk Rates',
-    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=520&q=75',
     link: '#',
     description: 'Single-estate first cold mechanical extraction with ultra-low acidity (<0.2%), delicate herbal notes, and a peppery polyphenol finish.',
     longDescription: 'Brought directly to commercial gourmet grocers and fine dining establishments by KHAN SHER LLC. Harvested by hand within 24 hours of pressing, bottled in UV-protective dark Marasca glass with an integrated anti-drip pour spout.',

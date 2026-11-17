@@ -1,6 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
-
-:root {
+﻿:root {
   --primary-navy: #0b0f19;
   --secondary-teal: #161e2e;
   --accent-teal: #c89b3c;
@@ -693,7 +691,7 @@ body {
   position: relative;
   min-height: 540px;
   background-color: #0b0f19;
-  background-image: radial-gradient(circle at 80% 25%, rgba(200, 155, 60, 0.18) 0%, transparent 55%), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2200&q=85');
+  background-image: radial-gradient(circle at 80% 25%, rgba(200, 155, 60, 0.18) 0%, transparent 55%), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1280&q=75');
   background-size: cover;
   background-position: center;
   display: flex;

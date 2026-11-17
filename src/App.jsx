@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { 
   Phone, Mail, MapPin, Search, ArrowRight, CheckCircle2, 
   Send, ExternalLink, ShieldCheck, Truck, Award,
@@ -8,7 +8,8 @@ import {
 } from 'lucide-react';
 import { categories, products } from './data/products';
 import { siteConfig as defaultSiteConfig } from './data/siteConfig';
-import { AdminPanel, useActiveSiteConfig } from './admin';
+import { useActiveSiteConfig } from './admin';
+const AdminPanel = lazy(() => import('./admin/AdminPanel'));
 import logoImg from './images/khan-sher-logo.svg';
 
 function isAdminHostname() {
@@ -267,7 +268,11 @@ export default function App() {
   };
 
   if (isAdminMode) {
-    return <AdminPanel onExitAdmin={exitAdmin} />;
+    return (
+      <Suspense fallback={<div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0b0f19', color: '#f3d98b', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>Loading Admin Panel...</div>}>
+        <AdminPanel onExitAdmin={exitAdmin} />
+      </Suspense>
+    );
   }
 
   return (
@@ -696,7 +701,7 @@ export default function App() {
                     className="clean-product-img-wrap"
                     onClick={() => viewProductDetail(prod)}
                   >
-                    <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" />
+                    <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" decoding="async" />
                     <span className="card-badge-stock">{prod.availability ? 'In Stock' : 'Ready'}</span>
                     <span className="card-badge-sku">{prod.sku}</span>
                   </div>
@@ -766,7 +771,7 @@ export default function App() {
                 <div className="hf-bento-card hf-bento-hero">
                   <div className="hf-bento-img-wrap">
                     <img 
-                      src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
+                      src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=75" 
                       alt="Curated Modern Living" 
                       className="hf-bento-img" 
                       loading="lazy" 
@@ -1201,7 +1206,7 @@ export default function App() {
                     className="clean-product-img-wrap"
                     onClick={() => viewProductDetail(prod)}
                   >
-                    <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" />
+                    <img src={prod.image} alt={prod.name} className="clean-product-img" loading="lazy" decoding="async" />
                     <span className="card-badge-stock">{prod.availability ? 'In Stock' : 'Ready'}</span>
                     <span className="card-badge-sku">{prod.sku}</span>
                   </div>
@@ -1724,7 +1729,7 @@ export default function App() {
                   }, 100);
                 }}
               >
-                <img src={cat.image} alt={cat.name} className="category-card-img" />
+                <img src={cat.image} alt={cat.name} className="category-card-img" loading="lazy" decoding="async" />
                 <div className="category-card-overlay">
                   <h3 className="category-title">{cat.name}</h3>
                   <p className="category-desc">{cat.description}</p>
