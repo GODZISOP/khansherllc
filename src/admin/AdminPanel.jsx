@@ -264,6 +264,17 @@ export default function AdminPanel({ onExitAdmin }) {
     }));
   };
 
+  const handleOwnerNameChange = (fullNameVal) => {
+    const parts = String(fullNameVal || '').trim().split(/\s+/).filter(Boolean);
+    setDraftConfig((prev) => ({
+      ...prev,
+      ownerFullName: fullNameVal,
+      ownerName: fullNameVal,
+      ownerFirstName: parts[0] || '',
+      ownerLastName: parts.slice(1).join(' '),
+    }));
+  };
+
   const handleMainPhoneChange = (displayVal) => {
     const telVal = toTelFormat(displayVal);
     const digitsVal = toWhatsAppDigits(displayVal);
@@ -790,6 +801,19 @@ export default function AdminPanel({ onExitAdmin }) {
                 </div>
 
                 <div className="adm-field adm-field-full">
+                  <label className="adm-label">1.2b Contact Person / Owner Full Name</label>
+                  <input
+                    className="adm-input"
+                    placeholder="e.g. Maaz Khan"
+                    value={draftConfig.ownerFullName || draftConfig.ownerName || ''}
+                    onChange={(e) => handleOwnerNameChange(e.target.value)}
+                  />
+                  <span className="adm-help">
+                    Website: Shown under Contact Us (&quot;Management: {draftConfig.ownerFullName || draftConfig.ownerName || 'Owner Name'}&quot;) &amp; Footer (&quot;Contact Person&quot;)
+                  </span>
+                </div>
+
+                <div className="adm-field adm-field-full">
                   <label className="adm-label">1.3 Top Blue Bar Phone Number</label>
                   <input
                     className="adm-input"
@@ -1083,7 +1107,7 @@ export default function AdminPanel({ onExitAdmin }) {
               </div>
 
               <div className="adm-form-grid">
-                <div className="adm-field adm-field-full">
+                <div className="adm-field">
                   <label className="adm-label">
                     4.1 Website / Company Name (&quot;Contact {draftConfig.companyName || 'Company'}&quot; &amp; &quot;Management&quot;)
                   </label>
@@ -1093,6 +1117,17 @@ export default function AdminPanel({ onExitAdmin }) {
                     onChange={(e) => handleCompanyNameChange(e.target.value)}
                   />
                   <span className="adm-help">Website: First item inside Contact Us &quot;Direct Coordinates&quot; &amp; section heading</span>
+                </div>
+
+                <div className="adm-field">
+                  <label className="adm-label">4.1b Contact Person / Owner Full Name (&quot;Management: ...&quot;)</label>
+                  <input
+                    className="adm-input"
+                    placeholder="e.g. Maaz Khan"
+                    value={draftConfig.ownerFullName || draftConfig.ownerName || ''}
+                    onChange={(e) => handleOwnerNameChange(e.target.value)}
+                  />
+                  <span className="adm-help">Website: Shown directly below Company Name in Contact Us</span>
                 </div>
 
                 <div className="adm-field">
