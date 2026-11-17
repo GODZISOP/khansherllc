@@ -701,8 +701,19 @@ export default function App() {
 
           {/* SECTION 2: FEATURED PRODUCTS */}
           <section id="featured-products-section" className="section-wrapper featured-section">
-            <div className="section-header-center">
-              <h2 className="section-heading-clean" style={{ textAlign: 'center' }}>Featured Products</h2>
+            <div className="editorial-section-head">
+              <h2 className="section-heading-clean">Featured Products</h2>
+              <button
+                type="button"
+                className="editorial-shop-all-link"
+                onClick={() => {
+                  setSelectedCategory('all');
+                  navigateTo('shop');
+                }}
+              >
+                <span>View All</span>
+                <ArrowRight size={14} />
+              </button>
             </div>
 
             <div className="featured-grid-four">
