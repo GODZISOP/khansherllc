@@ -26,12 +26,12 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   // 📞 PHONE, WHATSAPP & EMAIL
   // ─────────────────────────────────────────────
-  phonePrimary:    "+1 3025872947",        // Top nav display
-  phonePrimaryTel: "+13025872947",         // tel: dial link
-  phoneDirect:     "+1 3025872947",        // Contact page direct line
-  phoneDirectTel:  "+13025872947",         // tel: dial link
-  whatsappNumber:  "13025872947",          // Numbers only (no + or spaces)
-  whatsappDisplay: "+1 3025872947",
+  phonePrimary:    "+966 547900140",        // Top nav display
+  phonePrimaryTel: "+966547900140",         // tel: dial link
+  phoneDirect:     "+966 547900140",        // Contact page direct line
+  phoneDirectTel:  "+966547900140",         // tel: dial link
+  whatsappNumber:  "966547900140",          // Numbers only (no + or spaces)
+  whatsappDisplay: "+966 547900140",
   email:           "info@khansherllc.com",
   emailSecondary:  "khansherllc@gmail.com",
   website:         "www.khansherllc.com",
