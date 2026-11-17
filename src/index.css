@@ -5020,3 +5020,152 @@ body {
 .footer-bottom {
   border-top: 1px solid rgba(230, 223, 213, 0.14) !important;
 }
+
+
+/* ==========================================================================
+   FULL-SITE EDITORIAL CONSISTENCY (SHOP, FORMS, DRAWERS, MODALS, CONTACT)
+   ========================================================================== */
+
+/* Shop Filters, Search & Sort */
+.filter-tab {
+  background: #faf7f2 !important;
+  border: 1px solid #d7cfc4 !important;
+  color: #4a423b !important;
+  border-radius: 2px !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 9px 18px !important;
+}
+
+.filter-tab:hover {
+  border-color: #1e1916 !important;
+  color: #1e1916 !important;
+}
+
+.filter-tab.active {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border-color: #1e1916 !important;
+  box-shadow: none !important;
+}
+
+.search-input,
+.sort-dropdown {
+  background: #faf7f2 !important;
+  border: 1px solid #d7cfc4 !important;
+  border-radius: 2px !important;
+  color: #1e1916 !important;
+}
+
+.search-input:focus,
+.sort-dropdown:focus {
+  border-color: #1e1916 !important;
+  box-shadow: none !important;
+}
+
+/* Forms & Primary Submit Buttons */
+.form-input,
+.form-select,
+.form-textarea {
+  background: #faf7f2 !important;
+  border: 1px solid #d7cfc4 !important;
+  border-radius: 2px !important;
+  color: #1e1916 !important;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: #1e1916 !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.btn-submit-modal {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border: 1px solid #1e1916 !important;
+  border-radius: 2px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  padding: 13px 24px !important;
+}
+
+.btn-submit-modal:hover {
+  background: #38302b !important;
+}
+
+/* Cart Drawer & Modals */
+.cart-drawer {
+  background: #f7f3ed !important;
+  border-left: 1px solid #e4ddd3;
+}
+
+.cart-drawer-header,
+.cart-drawer-footer {
+  background: #faf7f2 !important;
+  border-color: #e4ddd3 !important;
+}
+
+.cart-item-card {
+  background: #faf7f2 !important;
+  border: 1px solid #e4ddd3 !important;
+  border-radius: 2px !important;
+}
+
+.cart-count-pill {
+  background: #efe9e0 !important;
+  color: #1e1916 !important;
+  border-radius: 2px !important;
+}
+
+.btn-checkout-wa {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border-radius: 2px !important;
+  font-size: 0.76rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase;
+}
+
+.btn-clear-cart {
+  border-radius: 2px !important;
+  border: 1px solid #d7cfc4 !important;
+  color: #4a423b !important;
+}
+
+.modal-window {
+  background: #f7f3ed !important;
+  border: 1px solid #e4ddd3 !important;
+  border-radius: 2px !important;
+}
+
+.modal-header {
+  background: #faf7f2 !important;
+  border-bottom: 1px solid #e4ddd3 !important;
+}
+
+/* Contact & Inner Page Cards */
+#contact-section .section-wrapper > div > div,
+.section-wrapper > div[style*="border-radius: 24px"],
+.section-wrapper > div > div[style*="border-radius: 20px"] {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+
+#contact-section {
+  background: #f7f3ed !important;
+}
+
+.mobile-nav-drawer {
+  background: #f7f3ed !important;
+}
+
+.mobile-cart-btn {
+  background: #1e1916 !important;
+  color: #f7f3ed !important;
+  border-radius: 2px !important;
+}
