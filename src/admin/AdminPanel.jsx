@@ -1253,7 +1253,7 @@ export default function AdminPanel({ onExitAdmin }) {
               </div>
 
               <div className="adm-form-grid">
-                <div className="adm-field adm-field-full">
+                <div className="adm-field">
                   <label className="adm-label">5.1 Website / Company Name (Footer Heading, &quot;Management:&quot; &amp; &quot;Contacts&quot;)</label>
                   <input
                     className="adm-input"
@@ -1262,6 +1262,19 @@ export default function AdminPanel({ onExitAdmin }) {
                   />
                   <span className="adm-help">
                     Website: Footer Brand Title, first line of &quot;Contacts&quot;, &quot;Management: {draftConfig.companyName || ''}&quot; &amp; Copyright bar
+                  </span>
+                </div>
+
+                <div className="adm-field">
+                  <label className="adm-label">5.1b Contact Person / Owner Full Name (&quot;Contact Person:&quot;)</label>
+                  <input
+                    className="adm-input"
+                    placeholder="e.g. Maaz Khan"
+                    value={draftConfig.ownerFullName || draftConfig.ownerName || ''}
+                    onChange={(e) => handleOwnerNameChange(e.target.value)}
+                  />
+                  <span className="adm-help">
+                    Website: Shown in Footer Brand section (&quot;Contact Person: {draftConfig.ownerFullName || draftConfig.ownerName || ''}&quot;)
                   </span>
                 </div>
 
@@ -1291,7 +1304,7 @@ export default function AdminPanel({ onExitAdmin }) {
                   </span>
                 </div>
 
-                <div className="adm-field adm-field-full">
+                <div className="adm-field">
                   <label className="adm-label">5.4 Footer Email Address (&quot;Trade Desk Hotline&quot; &amp; &quot;Contacts&quot;)</label>
                   <input
                     className="adm-input"
@@ -1301,6 +1314,17 @@ export default function AdminPanel({ onExitAdmin }) {
                   <span className="adm-help">
                     Website: Shown in Footer &quot;Trade Desk Hotline&quot; &amp; &quot;Contacts&quot;
                   </span>
+                </div>
+
+                <div className="adm-field">
+                  <label className="adm-label">5.4b Footer Secondary Email (Optional)</label>
+                  <input
+                    className="adm-input"
+                    placeholder="e.g. khansherllc@gmail.com"
+                    value={draftConfig.emailSecondary || ''}
+                    onChange={(e) => updateConfigField('emailSecondary', e.target.value)}
+                  />
+                  <span className="adm-help">Website: Secondary email shown under Footer &quot;Contacts&quot;</span>
                 </div>
 
                 <div className="adm-field">
