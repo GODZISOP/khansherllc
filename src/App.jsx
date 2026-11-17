@@ -774,92 +774,84 @@ export default function App() {
             </div>
           </section>
 
-          {/* THE AS GLOBAL TRADING LLC DISTINCTION EXPERIENCE (BENTO SHOWPIECE) */}
-          <section className="hf-experience-section">
-            <div className="section-wrapper">
-              <div className="section-header-center">
-                <span className="hf-eyebrow-badge">{siteConfig.eyebrowStandard}</span>
-                <h2 className="section-heading-clean" style={{ textAlign: 'center', marginTop: '10px' }}>
+          {/* SPLIT EDITORIAL SHOWCASE & 4-COLUMN FEATURE STRIP (REFERENCE LAYOUT) */}
+          <section className="hf-experience-section editorial-raw-section">
+            <div className="editorial-raw-banner">
+              <div className="editorial-raw-left">
+                <span className="editorial-raw-eyebrow">{siteConfig.eyebrowStandard} —</span>
+                <h2 className="editorial-raw-title">
                   Crafted For Everyday Living, Backed By Quality Sourcing
                 </h2>
-                <p className="hf-section-subtitle">
+                <p className="editorial-raw-desc">
                   We hand-select each collection for practical elegance, enduring durability, and dependable quality.
                 </p>
-              </div>
-
-              {/* Bento Grid */}
-              <div className="hf-bento-grid">
-                {/* Bento Card 1: Large Editorial Hero */}
-                <div className="hf-bento-card hf-bento-hero">
-                  <div className="hf-bento-img-wrap">
-                    <img 
-                      src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=75" 
-                      alt="Curated Modern Living" 
-                      className="hf-bento-img" 
-                      loading="lazy" 
-                    />
-                    <div className="hf-bento-overlay"></div>
-                  </div>
-                  <div className="hf-bento-hero-content">
-                    <span className="hf-gold-pill">AUTHENTIC CURATION</span>
-                    <h3 className="hf-bento-hero-title">Direct Workshop Sourcing</h3>
-                    <p className="hf-bento-hero-desc">
-                      Every piece is procured directly from certified suppliers and precision manufacturers, guaranteeing authentic materials and transparent pricing.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Bento Card 2: Priority Express Dispatch */}
-                <div className="hf-bento-card hf-bento-feature">
-                  <div className="hf-bento-icon-box">
-                    <Truck size={24} color="var(--accent-teal)" />
-                  </div>
-                  <h3 className="hf-bento-feature-title">Insured Express Dispatch</h3>
-                  <p className="hf-bento-feature-desc">
-                    Every order is individually inspected, protective-foam boxed, and dispatched with live tracking to ensure pristine doorstep arrival.
-                  </p>
-                  <div className="hf-bento-stat">
-                    <strong>24 - 48h</strong>
-                    <span>Fast regional dispatch</span>
-                  </div>
-                </div>
-
-                {/* Bento Card 3: Quality Guarantee */}
-                <div className="hf-bento-card hf-bento-feature">
-                  <div className="hf-bento-icon-box">
-                    <ShieldCheck size={24} color="var(--accent-teal)" />
-                  </div>
-                  <h3 className="hf-bento-feature-title">100% Quality Guaranteed</h3>
-                  <p className="hf-bento-feature-desc">
-                    From automotive tools to skincare and gourmet foods, our products undergo rigorous QC before reaching our catalog.
-                  </p>
-                  <div className="hf-bento-stat">
-                    <strong>1-Year</strong>
-                    <span>Manufacturer warranty support</span>
-                  </div>
-                </div>
-
-                {/* Bento Card 4: Executive Customer Desk */}
-                <div className="hf-bento-card hf-bento-feature hf-bento-wide">
-                  <div className="hf-bento-icon-box">
-                    <Phone size={24} color="var(--accent-teal)" />
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <h3 className="hf-bento-feature-title">Direct Concierge & Trade Desk</h3>
-                    <p className="hf-bento-feature-desc">
-                      Have questions or require wholesale quantity quotes? Connect directly with our executive trade team via WhatsApp or phone.
-                    </p>
-                  </div>
-                  <a 
-                    href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hello ${siteConfig.companyName}, I would like to inquire about wholesale pricing and catalogs.`)}`} 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="hf-btn-whatsapp-pill"
+                <div className="editorial-raw-actions">
+                  <button
+                    type="button"
+                    className="editorial-raw-btn"
+                    onClick={() => {
+                      setSelectedCategory('all');
+                      navigateTo('shop');
+                    }}
                   >
-                    <span>WhatsApp {siteConfig.phoneDirect}</span>
-                  </a>
+                    Explore Collection
+                  </button>
                 </div>
               </div>
+              <div className="editorial-raw-right">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                  alt="Direct Workshop Sourcing"
+                  className="editorial-raw-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div className="editorial-raw-strip">
+              <div className="editorial-raw-strip-inner">
+                <div className="editorial-raw-perk">
+                  <Award size={26} strokeWidth={1.4} className="editorial-raw-perk-icon" />
+                  <div>
+                    <div className="editorial-raw-perk-title">Direct Workshop Sourcing</div>
+                    <div className="editorial-raw-perk-sub">Certified suppliers &amp; authentic materials</div>
+                  </div>
+                </div>
+
+                <div className="editorial-raw-perk">
+                  <Truck size={26} strokeWidth={1.4} className="editorial-raw-perk-icon" />
+                  <div>
+                    <div className="editorial-raw-perk-title">Insured Express Dispatch</div>
+                    <div className="editorial-raw-perk-sub">24 - 48h fast regional dispatch</div>
+                  </div>
+                </div>
+
+                <div className="editorial-raw-perk">
+                  <ShieldCheck size={26} strokeWidth={1.4} className="editorial-raw-perk-icon" />
+                  <div>
+                    <div className="editorial-raw-perk-title">100% Quality Guaranteed</div>
+                    <div className="editorial-raw-perk-sub">1-Year manufacturer warranty support</div>
+                  </div>
+                </div>
+
+                <div className="editorial-raw-perk">
+                  <Phone size={26} strokeWidth={1.4} className="editorial-raw-perk-icon" />
+                  <div>
+                    <div className="editorial-raw-perk-title">Direct Concierge Desk</div>
+                    <a
+                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hello ${siteConfig.companyName}, I would like to inquire about wholesale pricing and catalogs.`)}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="editorial-raw-perk-link"
+                    >
+                      WhatsApp {siteConfig.phoneDirect}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="section-wrapper" style={{ paddingTop: '56px', paddingBottom: '64px' }}>
 
               {/* CLIENT TESTIMONIALS STRIP */}
               <div className="hf-testimonials-wrap">
